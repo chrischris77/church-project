@@ -1,0 +1,121 @@
+$primary-color: #f57c00;
+$dark-color: #333;
+$light-color: white;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  color: $dark-color;
+  line-height: 1.6;
+}
+
+header {
+  background: url('church.jpg') no-repeat center center/cover;
+  height: 100vh;
+  color: $light-color;
+  text-align: center;
+
+  nav {
+    ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+
+      li {
+        margin: 0 15px;
+
+        a {
+          color: $light-color;
+          text-decoration: none;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .hero {
+    position: relative;
+    top: 30%;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background: $primary-color;
+      color: $light-color;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  }
+}
+
+section {
+  padding: 50px 20px;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .ministry-list, .sermon-list, .event-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+
+    .ministry-item, .sermon-item, .event-item {
+      width: 30%;
+      text-align: center;
+    }
+  }
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  label {
+    margin-top: 10px;
+  }
+
+  input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+  }
+
+  button {
+    margin-top: 15px;
+    padding: 10px; /* Fixed: Completed the padding rule */
+    background: $primary-color;
+    color: $light-color;
+    border: none;
+    border-radius: 5px;
+  }
+}
+
+footer {
+  background-color: $dark-color;
+  color: $light-color;
+  text-align: center;
+  padding: 20px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+  a {
+    color: $light-color;
+    text-decoration: none;
+  }
+}
